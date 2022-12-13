@@ -1,2 +1,4 @@
 # AbAgIntPre
-AbAgIntPre webserver source code
+AbAgIntPre is a deep learning-assisted web server for fast identification of antibody-antigen interactions that only relies on amino acid sequences. By using a Siamese-like convolutional neural network with the amino acid composition encoding scheme, AbAgIntPre achieved satisfactory performance with the Area Under Curve (AUC) of 0.82 on a high-quality generic independent test dataset. Besides, this approach also showed competitive performance on the more specific SARS-CoV dataset. We expect that AbAgIntPre can serve as an important complement to traditional experimental methods for antibody screening and effectively reduce the workload of antibody design. The web server of AbAgIntPre is freely available at [here](http://www.zzdlab.com/AbAgIntPre).
+## Network Architecture
+The folder `model` includes the siamese CNN architechture and CKSAAP encoding strategy used in AbAgIntPre.
