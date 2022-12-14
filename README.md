@@ -4,6 +4,7 @@ AbAgIntPre is a deep learning-assisted web server for fast identification of ant
 ![Network Architecture](https://github.com/emersON106/AbAgIntPre/blob/main/img/Network%20Architecture.png)
 We used a Siamese-like CNN as the deep learning classifier to infer whether the query antigen and antibody can interact. Specifically, our model mainly included three parts: input module, convolution module, and prediction module. In the input module, antigens or antibodies were coded by CKSAAP encoding scheme, and four channels correspond to four k-spaced values in CKSAAP. The convolution module further processed the encoded feature vectors. AbAgIntPre included two convolution modules, each of which consists of a batch normalization layer, convolution layer, rectified linear unit, and pooling.  Two fully connected layers were used to map the learned distributed features to the sample label space and yield the probability of interaction between the given antigen and antibody.
 <br>
+<br>
 ***The source code of siamese CNN architechture and CKSAAP encoding strategy can be found in the `model` folder.***
 <br>
 ## Dataset
