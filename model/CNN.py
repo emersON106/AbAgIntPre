@@ -10,7 +10,7 @@ class SiameseNetwork(nn.Module):
     def __init__(self):
         super(SiameseNetwork, self).__init__()
         self.cnn = nn.Sequential(
-            nn.Conv2d(in_channels=3, out_channels=10, kernel_size=3, stride=1),
+            nn.Conv2d(in_channels=4, out_channels=10, kernel_size=3, stride=1),
             nn.BatchNorm2d(10),
             nn.leaky_relu(),
             nn.Conv2d(10, 20, 3, 1),
